@@ -1,8 +1,9 @@
 package com.codehuntspk.compose_examples.ui.screens
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
@@ -11,13 +12,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 
 @Composable
 fun ProfileScreen() {
@@ -65,26 +66,24 @@ fun ProfileHeader() {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box(
+        Image(
+            painter = painterResource(id = com.codehuntspk.compose_examples.R.drawable.img_profile),
+            contentDescription = null,
             modifier = Modifier
-                .size(100.dp)
+                .size(120.dp)
                 .clip(CircleShape)
-                .background(Color.LightGray)
         )
 
-        // for spacing
         Spacer(modifier = Modifier.height(16.dp))
 
-        // User Name
         Text(
             text = "Muhammad Naveed",
-            fontSize = 24.sp,
+            style = MaterialTheme.typography.headlineSmall
         )
 
-        // User Email
         Text(
             text = "naveed@codehuntspk.com",
-            fontSize = 16.sp,
+            style = MaterialTheme.typography.bodyMedium,
             color = Color.Gray
         )
     }
@@ -94,8 +93,7 @@ fun ProfileHeader() {
 fun SectionTitle(title: String) {
     Text(
         text = title,
-        fontSize = 18.sp,
-        fontWeight = FontWeight.Bold,
+        style = MaterialTheme.typography.titleMedium,
         modifier = Modifier
             .fillMaxWidth()
             .padding(vertical = 8.dp),
@@ -112,18 +110,19 @@ fun SettingItem(
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(vertical = 12.dp),
+            .padding(vertical = 10.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
+
         Text(
             text = title,
-            fontSize = 16.sp,
+            style = MaterialTheme.typography.bodyMedium,
             modifier = Modifier.weight(1f)
         )
         if (value != null) {
             Text(
                 text = value,
-                fontSize = 16.sp,
+                style = MaterialTheme.typography.bodyMedium,
                 color = Color.Gray
             )
         }
