@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.codehuntspk.compose_examples.ui.screens.Example4_SideEffect
 import com.codehuntspk.compose_examples.ui.screens.ProfileScreen
 import com.codehuntspk.compose_examples.ui.theme.Compose_examplesTheme
 
@@ -25,7 +26,8 @@ class MainActivity : ComponentActivity() {
                     Column(
                         modifier = Modifier.padding(80.dp)
                     ) {
-                        ProfileScreen()
+                        // ProfileScreen()
+                        Example4_SideEffect()
                     }
                 }
             }
