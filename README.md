@@ -83,6 +83,22 @@ Building custom layout composables from scratch:
 - Measuring and placing children
 - Custom spacing logic
 
+### 10. **ConstraintLayout Demo** 🔗
+Advanced constraint-based layouts:
+- Basic constraints with `constrainAs`
+- Guidelines for proportional positioning
+- Barriers for dynamic content alignment
+- Chains with different styles (Spread, SpaceBetween, Packed)
+- Complex layouts with minimal nesting
+
+### 11. **Intrinsic Size Demo** 📏
+Understanding intrinsic measurements:
+- `IntrinsicSize.Max` for matching widest child
+- `IntrinsicSize.Min` for matching narrowest child
+- Solving layout problems without custom layouts
+- Automatic width/height synchronization
+- Comparing layouts with and without intrinsic sizing
+
 ## 🛠️ Tech Stack
 
 - **Language**: Kotlin 2.0.21
@@ -135,7 +151,9 @@ compose_examples/
 │   │   │   │       │   ├── SlotAPI.kt           # Slot pattern demo
 │   │   │   │       │   ├── LocalDemoScreen.kt   # CompositionLocal
 │   │   │   │       │   ├── CustomLayout.kt      # Custom modifiers
-│   │   │   │       │   └── CustomLayoutComposable.kt # Custom layouts
+│   │   │   │       │   ├── CustomLayoutComposable.kt # Custom layouts
+│   │   │   │       │   ├── ConstraintLayoutDemo.kt  # ConstraintLayout examples
+│   │   │   │       │   └── IntrinsiveMeasureDemo.kt # Intrinsic size examples
 │   │   │   │       └── theme/
 │   │   │   │           ├── Color.kt
 │   │   │   │           ├── Theme.kt
@@ -164,7 +182,8 @@ If you're new to Jetpack Compose, we recommend exploring the examples in this or
 7. **LocalDemoScreen** - Understand implicit data sharing
 8. **CustomLayout** - Create custom layout modifiers
 9. **CustomLayoutComposable** - Build custom layout composables
-
+10. **ConstraintLayoutDemo** - Advanced constraint-based layouts
+11. **IntrinsiveMeasureDemo** - Master intrinsic size measurements
 
 ## 🎨 Material 3 Theming
 
