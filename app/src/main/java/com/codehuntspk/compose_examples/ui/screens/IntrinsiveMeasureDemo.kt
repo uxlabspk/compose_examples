@@ -40,7 +40,6 @@ fun IntrinsicSizeDemo() {
         }
 
         Spacer(modifier = Modifier.height(32.dp))
-        
 
         // Without IntrinsicSize - buttons have different widths
         Column(
