@@ -127,8 +127,8 @@ fun Example4_SideEffect() {
 @Preview
 @Composable
 fun PreviewSimpleCoroutinesDemo() {
-    // Example1_BasicCoroutine()
-    //Example2_LaunchedEffect()
+    //Example1_BasicCoroutine()
+    // Example2_LaunchedEffect()
     //Example3_Dispatchers()
-    Example4_SideEffect()
+    //Example4_SideEffect()
 }
