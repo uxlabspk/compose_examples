@@ -4,7 +4,9 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.*
@@ -89,23 +91,35 @@ fun Example3_Dispatchers() {
 @Composable
 fun Example4_SideEffect() {
     var count by remember { mutableStateOf(0) }
-    val recomposeTracker = remember { mutableIntStateOf(0) }
 
-    // SideEffect runs AFTER every recomposition
+    // This state will be updated by the SideEffect, making it visible in the UI.
+    var sideEffectLog by remember { mutableStateOf("SideEffect has not run yet.") }
+
     SideEffect {
-        recomposeTracker.intValue++
-        println("✓ SideEffect executed! Count: ${recomposeTracker.intValue}")
+        // This block runs after every recomposition.
+        // We update our log state, which will trigger another recomposition
+        // to display the new message.
+        sideEffectLog = "✅ SideEffect executed! Count is now $count"
     }
 
-    Card(modifier = Modifier.fillMaxWidth()) {
-        Column(modifier = Modifier.padding(16.dp)) {
-            Text("4. SideEffect", style = MaterialTheme.typography.titleMedium)
-            Text("Button clicks: $count")
-            Text("Recompositions: ${recomposeTracker.intValue}")
+    Column(
+        modifier = Modifier.fillMaxSize().padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(16.dp)
+    ) {
 
-            Button(onClick = { count++ }) {
-                Text("Increment (Triggers Recomposition)")
-            }
+
+        Button(onClick = { count++ }) {
+            Text("Increment Count")
+        }
+
+        // This Text displays the result of our SideEffect.
+        Card(modifier = Modifier.fillMaxWidth()) {
+            Text(
+                text = sideEffectLog,
+                modifier = Modifier.padding(16.dp),
+                style = MaterialTheme.typography.bodyMedium
+            )
         }
     }
 }
