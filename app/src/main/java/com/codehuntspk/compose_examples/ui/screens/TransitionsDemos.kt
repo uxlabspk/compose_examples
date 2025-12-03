@@ -269,7 +269,7 @@ fun FloatAsStateExample() {
 )
 @Composable
 fun PreviewTransitionsDemo() {
-    //CrossfadeExample()
+    CrossfadeExample()
     //AutoStartExample()
     //SidebarCrossfadeExample()
     //FloatAsStateExample()

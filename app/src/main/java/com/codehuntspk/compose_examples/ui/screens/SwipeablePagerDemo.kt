@@ -47,7 +47,7 @@ fun Example1_BasicHorizontalPager() {
                         .padding(8.dp),
                     colors = CardDefaults.cardColors(
                         containerColor = when (page) {
-                            0 -> Color(0xFFE3F2FD)
+                            0 -> Color.Cyan
                             1 -> Color(0xFFFCE4EC)
                             2 -> Color(0xFFF3E5F5)
                             3 -> Color(0xFFE8F5E9)
@@ -99,7 +99,7 @@ fun Example2_HorizontalPagerWithIndicator() {
                         .height(200.dp)
                 ) { page ->
                     val colors = listOf(
-                        Color(0xFF6200EE),
+                        Color(0xFF8C68BF),
                         Color(0xFF03DAC5),
                         Color(0xFFFF6F00),
                         Color(0xFFD32F2F)
@@ -300,9 +300,9 @@ fun Example4_PagerWithButtons() {
 @Preview(showBackground = true)
 @Composable
 fun PreviewSwipeablePagerDemo() {
-    // Example1_BasicHorizontalPager()
-    // Example2_HorizontalPagerWithIndicator()
-    // Example3_VerticalPager()
+    //Example1_BasicHorizontalPager()
+    //Example2_HorizontalPagerWithIndicator()
+    //Example3_VerticalPager()
     Example4_PagerWithButtons()
 }
 
