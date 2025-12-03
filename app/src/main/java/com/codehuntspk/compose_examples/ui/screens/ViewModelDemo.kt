@@ -12,7 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.codehuntspk.compose_examples.ui.viewmodel.MyViewModel
+import com.codehuntspk.compose_examples.viewmodel.MyViewModel
 
 @Composable
 fun ViewModelDemo(

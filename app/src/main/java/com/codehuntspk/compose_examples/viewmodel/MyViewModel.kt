@@ -1,4 +1,4 @@
-package com.codehuntspk.compose_examples.ui.viewmodel
+package com.codehuntspk.compose_examples.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
