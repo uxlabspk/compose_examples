@@ -10,8 +10,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
-import com.codehuntspk.compose_examples.ui.screens.Example4_SideEffect
+import com.codehuntspk.compose_examples.ui.screens.ProductDatabaseScreen
 import com.codehuntspk.compose_examples.ui.theme.Compose_examplesTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,12 +20,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Compose_examplesTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Column(
-                        modifier = Modifier.padding(80.dp)
+                        modifier = Modifier.padding(innerPadding)
                     ) {
-                        // ProfileScreen()
-                        Example4_SideEffect()
+                        ProductDatabaseScreen()
                     }
                 }
             }
