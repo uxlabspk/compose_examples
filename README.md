@@ -99,6 +99,99 @@ Understanding intrinsic measurements:
 - Automatic width/height synchronization
 - Comparing layouts with and without intrinsic sizing
 
+### 12. **Lazy Lists Demo** 📜
+Efficient scrollable lists with lazy loading:
+- `LazyColumn` for vertical scrolling lists
+- `LazyRow` for horizontal scrolling lists
+- `LazyVerticalGrid` with fixed and adaptive columns
+- Programmatic scroll control
+- Performance optimization with lazy composition
+- Only renders visible items
+
+### 13. **Grid Layouts Demo** 🎯
+Advanced grid and scrollable layouts:
+- Basic scrollable lists with `Column` + `verticalScroll`
+- Programmatic scrolling with buttons
+- Efficient `LazyColumn` for large datasets
+- Fixed and adaptive grid layouts
+- Card-based item layouts
+- Scroll state management
+
+### 14. **Swipeable Pager Demo** 📱
+Horizontal and vertical paging with gestures:
+- `HorizontalPager` for swipeable content
+- `VerticalPager` for vertical scrolling pages
+- Page indicators (dots)
+- Animated page transitions
+- Programmatic page navigation
+- Multi-page layouts with Material 3
+
+### 15. **Animations & Transitions** ✨
+Comprehensive animation examples:
+- `Crossfade` for smooth content transitions
+- `animateColorAsState` for color animations
+- `updateTransition` for coordinated multi-property animations
+- `rememberInfiniteTransition` for continuous animations
+- Spring, Tween, and custom animation specs
+- Icon morphing and state-based animations
+
+### 16. **Gestures Demo** 👆
+Touch gesture handling and interactions:
+- Tap gestures (single, double, long press)
+- Drag gestures with `detectDragGestures`
+- Draggable modifier for constrained dragging
+- Transformable gestures (pinch, zoom, rotate)
+- Multi-touch interactions
+- Gesture state management
+
+### 17. **ViewModel Integration** 🏛️
+Architecture components with Compose:
+- ViewModel with StateFlow
+- State hoisting with ViewModel
+- Collecting flows in Compose
+- Separation of UI and business logic
+- Counter example with increment/decrement
+
+### 18. **Temperature Converter** 🌡️
+Practical real-world app example:
+- Bidirectional data binding
+- Celsius to Fahrenheit conversion
+- Fahrenheit to Celsius conversion
+- ViewModel with StateFlow
+- Real-time input validation
+- Material 3 TextField usage
+
+### 19. **Kotlin Flows Demo** 🌊
+Reactive programming with Kotlin Flows:
+- Cold Flow basics
+- StateFlow for UI state management
+- SharedFlow for events
+- Combining multiple flows
+- Flow operators (map, filter, debounce)
+- Collecting flows in Compose
+- Practical examples with ViewModels
+
+### 20. **Coroutines & Side Effects** ⚡
+Asynchronous programming in Compose:
+- `rememberCoroutineScope` for manual coroutine launching
+- `LaunchedEffect` for automatic side effects
+- `DisposableEffect` for cleanup
+- `derivedStateOf` for computed state
+- Async data loading
+- Cancellation handling
+- Lifecycle-aware coroutines
+
+### 21. **Room Database Demo** 💾
+Complete database integration example:
+- Room database setup
+- DAO (Data Access Object) patterns
+- Entity definitions
+- Product CRUD operations (Create, Read, Update, Delete)
+- LiveData with Compose
+- Search functionality
+- Real-time database updates
+- Material 3 UI for database operations
+
 ## 🛠️ Tech Stack
 
 - **Language**: Kotlin 2.0.21

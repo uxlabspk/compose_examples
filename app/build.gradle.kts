@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.runtime)
+    implementation("androidx.compose.material:material-icons-extended:1.7.6")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.1.1")
     implementation("io.coil-kt:coil-compose:2.5.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
@@ -61,6 +62,7 @@ dependencies {
     // Room dependencies
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.compose.material3.window.size.class1)
     ksp(libs.androidx.room.compiler)
 
     testImplementation(libs.junit)
