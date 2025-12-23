@@ -185,3 +185,27 @@ fun TransformableExample() {
 fun PreviewGestures() {
     TapGestureDemo()
 }
+
+@Preview
+@Composable
+fun PreviewDraggable() {
+    DraggableExample()
+}
+
+@Preview
+@Composable
+fun PreviewScrollable() {
+    ScrollableExample()
+}
+
+@Preview
+@Composable
+fun PreviewTransformable() {
+    TransformableExample()
+}
+
+@Preview
+@Composable
+fun PreviewDrag() {
+    DragGestureExample()
+}
