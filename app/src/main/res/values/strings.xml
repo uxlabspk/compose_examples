@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">compose_examples</string>
+    <string name="widget_description">Get daily motivational quotes to inspire your day</string>
 </resources>

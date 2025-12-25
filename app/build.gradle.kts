@@ -65,6 +65,12 @@ dependencies {
     implementation(libs.androidx.compose.material3.window.size.class1)
     ksp(libs.androidx.room.compiler)
 
+    // Glance Widget dependencies
+    implementation("androidx.glance:glance:1.1.0")
+    implementation("androidx.glance:glance-appwidget:1.1.0")
+    implementation("androidx.glance:glance-material3:1.1.0")
+    implementation("androidx.work:work-runtime-ktx:2.9.1")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
